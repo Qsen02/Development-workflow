@@ -11,14 +11,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name : checkout the repo
+      uses: actions/checkout@v4
     - name: Use Node.js 22
       uses: actions/setup-node@v4
       with:
         node-version: 22
         cache: 'npm'
     - name: Deploy
-    - uses: JorgeLNJunior/render-deploy@v1.4.5
+      uses: johnbeynon/render-deploy-action@v0.0.8
       with:
         service_id: d1ar6115pdvs73d78ec0
         api_key: rnd_fxQthqT8chhQ5rJ83kqj4DKedjjf
+        wait-for-success: true
