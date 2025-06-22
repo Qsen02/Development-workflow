@@ -1,0 +1,24 @@
+name: Deploy to qa
+on:
+  push:
+    branches: [ "QA" ]
+  pull_request:
+    branches: [ "QA" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Use Node.js 22
+      uses: actions/setup-node@v4
+      with:
+        node-version: 22
+        cache: 'npm'
+    - name: Deploy
+    - uses: JorgeLNJunior/render-deploy@v1.4.5
+      with:
+        service_id: d1ar6115pdvs73d78ec0
+        api_key: d1ar8mbe5dus73dvag10
