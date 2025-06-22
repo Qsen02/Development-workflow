@@ -1,9 +1,9 @@
-name: Deploy to production
+name: Deploy to qa
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "QA" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "QA" ]
 
 jobs:
   build:
@@ -21,4 +21,4 @@ jobs:
     - uses: JorgeLNJunior/render-deploy@v1.4.5
       with:
         service_id: d1ar6115pdvs73d78ec0
-        api_key: rnd_fxQthqT8chhQ5rJ83kqj4DKedjjf
+        api_key: d1ar8mbe5dus73dvag10
