@@ -1,9 +1,9 @@
 name: Deploy to staging
 on:
   push:
-    branches: [ "staging" ]
+    branches: [ "Staging" ]
   pull_request:
-    branches: [ "staging" ]
+    branches: [ "Staging" ]
 
 jobs:
   build:
