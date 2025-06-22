@@ -20,5 +20,5 @@ jobs:
     - name: Deploy
     - uses: JorgeLNJunior/render-deploy@v1.4.5
       with:
-        service_id: d1ar6115pdvs73d78ec0
+        service_id: d1aquqbe5dus73duvsb0
         api_key: rnd_fxQthqT8chhQ5rJ83kqj4DKedjjf
