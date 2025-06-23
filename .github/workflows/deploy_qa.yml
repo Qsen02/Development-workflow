@@ -6,7 +6,7 @@ on:
     branches: [ "QA" ]
 
 jobs:
-  build:
+  deploy:
 
     runs-on: ubuntu-latest
 
