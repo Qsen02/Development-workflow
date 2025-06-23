@@ -16,6 +16,6 @@ jobs:
     - name: Deploy
       uses: johnbeynon/render-deploy-action@v0.0.8
       with:
-        service_id: d1aquqbe5dus73duvsb0
+        service_id: srv-d1aquqbe5dus73duvsb0
         api_key: rnd_fxQthqT8chhQ5rJ83kqj4DKedjjf
         wait-for-success: true
