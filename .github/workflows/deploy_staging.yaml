@@ -6,7 +6,7 @@ on:
     branches: [ "Staging" ]
 
 jobs:
-  build:
+  deploy:
 
     runs-on: ubuntu-latest
 
